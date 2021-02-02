@@ -10,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component'
 import { ROUTES } from './app.routes';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
-import { RestaurantsComponent } from './restaurantes/restaurants/restaurants.component';
 import { RestaurantComponent } from './restaurantes/restaurant/restaurant.component';
 
 
@@ -21,7 +20,6 @@ import { RestaurantComponent } from './restaurantes/restaurant/restaurant.compon
     HomeComponent,
     AboutComponent,
     RestaurantesComponent,
-    RestaurantsComponent,
     RestaurantComponent
   ],
   imports: [
