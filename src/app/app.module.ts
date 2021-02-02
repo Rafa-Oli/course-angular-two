@@ -9,6 +9,9 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component'
 import { ROUTES } from './app.routes';
+import { RestaurantesComponent } from './restaurantes/restaurantes.component';
+import { RestaurantsComponent } from './restaurantes/restaurants/restaurants.component';
+import { RestaurantComponent } from './restaurantes/restaurant/restaurant.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { ROUTES } from './app.routes';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    RestaurantesComponent,
+    RestaurantsComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
