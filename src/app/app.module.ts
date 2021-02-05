@@ -2,8 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -11,7 +9,9 @@ import { AboutComponent } from './about/about.component'
 import { ROUTES } from './app.routes';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
 import { RestaurantComponent } from './restaurantes/restaurant/restaurant.component';
-
+import { RestaurantDetailComponent } from './restaurantes/restaurant-detail/restaurant-detail.component';
+import { MenuComponent } from './restaurantes/restaurant-detail/menu/menu.component';
+import { ShoppingCartComponent } from './restaurantes/restaurant-detail/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,10 @@ import { RestaurantComponent } from './restaurantes/restaurant/restaurant.compon
     HomeComponent,
     AboutComponent,
     RestaurantesComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    RestaurantDetailComponent,
+    ShoppingCartComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
