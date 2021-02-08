@@ -18,6 +18,7 @@ import { ShoppingCartService } from './restaurantes/restaurant-detail/shopping-c
 import { RestaurantsService } from './restaurantes/restaurants.service';
 import { OrderComponent } from './order/order.component';
 import { FormsModule } from '@angular/forms';
+import { InputComponent } from './shared/input/input.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     MenuComponent,
     MenuItemComponent,
     ReviewsComponent,
-    OrderComponent
+    OrderComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
