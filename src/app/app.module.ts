@@ -19,7 +19,6 @@ import { RestaurantsService } from './restaurantes/restaurants.service';
 import { OrderComponent } from './order/order.component';
 import { FormsModule } from '@angular/forms';
 import { InputComponent } from './shared/input/input.component';
-import { EadioComponent } from './shared/eadio/eadio.component';
 import { RadioComponent } from './shared/radio/radio.component';
 
 @NgModule({
@@ -37,7 +36,6 @@ import { RadioComponent } from './shared/radio/radio.component';
     ReviewsComponent,
     OrderComponent,
     InputComponent,
-    EadioComponent,
     RadioComponent
   ],
   imports: [
