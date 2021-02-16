@@ -15,10 +15,7 @@ import { ReviewsComponent } from './restaurantes/restaurant-detail/reviews/revie
 import { MenuItemComponent } from './restaurantes/restaurant-detail/menu-item/menu-item.component';
 import { ShoppingCartService } from './restaurantes/restaurant-detail/shopping-cart/shopping-cart.service';
 import { RestaurantsService } from './restaurantes/restaurants.service';
-import { OrderComponent } from './order/order.component';
-import { OrderItensComponent } from './order/order-itens/order-itens.component';
 import { OrderService } from './order/order.service';
-import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SharedModule } from './shared/shared.module';
 
@@ -35,9 +32,6 @@ import { SharedModule } from './shared/shared.module';
     MenuComponent,
     MenuItemComponent,
     ReviewsComponent,
-    OrderComponent,
-    OrderItensComponent,
-    DeliveryCostsComponent,
     OrderSumaryComponent,
 
   ],
