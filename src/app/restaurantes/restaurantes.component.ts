@@ -5,6 +5,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 import 'rxjs/add/operator/switchMap'
+import 'rxjs/add/operator/debounceTime'
+import 'rxjs/add/operator/distinctUntilChanged'
 
 @Component({
   selector: 'mt-restaurantes',
@@ -40,6 +42,8 @@ export class RestaurantesComponent implements OnInit {
       search: ['']
     })
     this.searchForm.get('search').valueChanges
+      .debounceTime(500) //vai mandar result depois de 500ms
+      .distinctUntilChanged() //vai verificar se é igual ao ultimo result
       .switchMap((value) => this.restaurantsService.restaurants(value))
       .subscribe(restaurants => this.restaurants = restaurants)
 
